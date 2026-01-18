@@ -1,0 +1,219 @@
+Me ajuda arrumar faz tempo que eu não mexo 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+        <title>Portfolio</title>
+        <style>
+            /* Custom styles */
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            .button {
+                background-color: #007bff;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: 600;
+                transition: background-color 0.3s;
+            }
+            .button:hover {
+                background-color: #0056b3;
+            }
+
+            /* Navbar */
+            .nav__link {
+                transition: color 0.3s;
+            }
+            .nav__link:hover {
+                color: #007bff;
+            }
+
+            /* Responsividade */
+            @media (max-width: 768px) {
+                .nav__menu {
+                    display: none;
+                }
+                .nav__toggle {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Lucas Lentz</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Conhecimento</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Olá,<br>Meu nome é <span class="home__title-color">Lucas</span><br></h1>
+
+                    <a href="assets/curriculo/Curriculo Lucas Lentz(modificado).pdf" download="" target="_blank" class="button">Curriculo</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/lucas-lentz-2b9219230/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/lucas0788" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                </div>
+
+                <div class="home__img">
+                    <img src="assets/img/file.png" style="border-radius:200px; width: 100%;" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">Sobre</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/file.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Olá, meu nome é Lucas</h2>
+                        <p class="about__text">Sou aluno da faculdade Anhanguera (formado em Tecnologia em Análise e Desenvolvimento de Sistemas) e estou cursando Redes e Computadores.<br><br>
+                        Sou Estagiário na <a href="http://computecnica.com.br/">Computecnica</a> no setor <b>HelpDesk</b>, com as seguintes funções:<br>
+                        - Monitoramento Zabbix<br>
+                        - Relatórios semanais<br>
+                        - Alimentação de dados no BI<br>
+                        - Abertura de chamados e ligações de alertas<br><br>
+                        <hr>
+                        <p><b>Contato</b><br>
+                        E-mail: <a href="mailto:lucaslentz7@gmail.com">lucaslentz7@gmail.com</a><br>
+                        Telefone: <a href="tel:+5511980543495">11980543495</a></p>
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Conhecimento</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h3 class="skills__subtitle">Minhas qualidades:</h3>
+                        <p class="skills__text">
+                            Esforçado, Criativo, Inteligente, Trabalho bem em equipe, Foco em resultados, Comprometido, Inteligência emocional
+                        </p>
+
+                        <!-- Skill Bars -->
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html"></div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css"></div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">JavaScript</span>
+                            </div>
+                            <div class="skills__bar skills__js"></div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <span class="skills__name">Banco de Dados</span>
+                            </div>
+                            <div class="skills__bar skills__ux"></div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img" style="width: 100%; height: 90%;">
+                    </div>
+                </div>
+
+
+                
+            </section>
+            <section id="portfolio">
+                <h2 class="section-title">Meu Portfólio</h2>
+                <div class="portfolio-container">
+                    <div class="portfolio-item">
+                        <img src="assets/img/work2.jpg" alt="Projeto 1">
+                        <h3>Projeto 1</h3>
+                        <p>Descrição breve do projeto.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="project2.jpg" alt="Projeto 2">
+                        <h3>Projeto 2</h3>
+                        <p>Descrição breve do projeto.</p>
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Lucas</p>
+            <div class="footer__social">
+                <a href="https://web.facebook.com/profile.php?id=100082395065192" target="_blank" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/luokao13rt/" target="_blank" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            </div>
+            <p class="footer__copy">&#169; Lucas Lentz. All rights reserved</p>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+
